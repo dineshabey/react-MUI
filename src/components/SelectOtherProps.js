@@ -7,15 +7,24 @@ import Select from '@mui/material/Select';
 
 export default function SelectOtherProps() {
     const [age, setAge] = React.useState('');
+    const [isCheck, setIsCheck] = React.useState(true);
 
     const handleChange = (event) => {
+        if (event.target.value === 20) {
+            setIsCheck(false);
+        } else {
+            setIsCheck(true);
+
+        }
         setAge(event.target.value);
     };
 
+
+
     return (
         <div>
-          
-            <FormControl sx={{ m: 1, minWidth: 120 }} error>
+
+            <FormControl sx={{ m: 1, minWidth: 120 }} error={isCheck}>
                 <InputLabel id="demo-simple-select-error-label">Age</InputLabel>
                 <Select
                     labelId="demo-simple-select-error-label"
@@ -23,7 +32,7 @@ export default function SelectOtherProps() {
                     value={age}
                     label="Age"
                     onChange={handleChange}
-                    renderValue={(value) => `⚠️  - ${value}`}
+                    renderValue={(value) => `${isCheck ? '⚠️ :' : ''}   ${value}`}
                 >
                     <MenuItem value="">
                         <em>None</em>
@@ -32,9 +41,9 @@ export default function SelectOtherProps() {
                     <MenuItem value={20}>Twenty</MenuItem>
                     <MenuItem value={30}>Thirty</MenuItem>
                 </Select>
-                <FormHelperText>Error</FormHelperText>
+              {isCheck &&  <FormHelperText>Error</FormHelperText>}
             </FormControl>
-          
+
         </div>
     );
 }
