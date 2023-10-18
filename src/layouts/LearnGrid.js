@@ -10,7 +10,7 @@ export default function LearnGrid() {
         spacing={3}
         justifyContent='space-around'
         >
-        <Grid item>
+        <Grid item xs={6} sm={4}>
           <Box sx={{ 
             bgcolor: 'lightgrey',
             p:4,
@@ -20,14 +20,14 @@ export default function LearnGrid() {
 
           </Box>
         </Grid>
-        <Grid item>
+        <Grid item xs={6} sm={4}>
           <Box sx={{ bgcolor: 'lightgrey',p:4 ,
            '&:hover':{bgcolor:'red'},}}>
             <Typography>Item 02</Typography>
 
           </Box>
         </Grid>
-        <Grid item>
+        <Grid item >
           <Box sx={{ bgcolor: 'lightgrey',p:4,
            '&:hover':{bgcolor:'yellow'}, }}>
             <Typography>Item 03</Typography>
