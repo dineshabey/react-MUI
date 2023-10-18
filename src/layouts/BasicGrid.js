@@ -3,6 +3,7 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
+import { Typography } from '@mui/material';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: 'skyblue',
@@ -16,19 +17,14 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function BasicGrid() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 7 }}>
-        <Grid item xs={6}>
-          <Item>1</Item>
-        </Grid>
-        <Grid item xs={6}>
-          <Item>2</Item>
-        </Grid>
-        <Grid item xs={6}>
-          <Item>3</Item>
-        </Grid>
-        <Grid item xs={6}>
-          <Item>4</Item>
-        </Grid>
+      <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+        {Array.from(Array(6)).map((_, index) => (
+          <Grid item xs={2} sm={4} md={6} key={index}>
+            <Item>
+              <Typography sx={{ fontSize: { xs: '20px', sm: '30px', md: '40px',lg:'100px' } }}>xs=2</Typography>
+            </Item>
+          </Grid>
+        ))}
       </Grid>
     </Box>
   );
