@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+
+.MyDiv:hover{
+  background-color: yellow;
+}
+.MyDiv{
+  background-color: teal;
+  cursor: pointer;
+}

@@ -1,28 +1,32 @@
-import logo from './logo.svg';
+
+import { Box, Typography } from '@mui/material';
 import './App.css';
-import BasicButtons from './components/BasicButtons';
-import LoadingButtonsTransition from './components/LoadingButtonsTransition';
-import CustomizedRating from './components/CustomizedRating';
-import SelectOtherProps from './components/SelectOtherProps';
-import BasicTextFields from './components/BasicTextFields';
-import Types from './components/Types';
-import ScrollDialog from './components/ScrollDialog';
-import TemporaryDrawer from './components/TemporaryDrawer';
+import ComponetsUsages from './ComponetsUsages';
+import BoxSx from './layouts/BoxSx';
+
 
 function App() {
   return (
     <div className="App">
+      {/* <ComponetsUsages /> */}
+      {/* <div className='MyDiv' >
+        <Typography variant='h2'>Hi There</Typography>
+      </div>
+      <br /> */}
 
-      <BasicButtons />
-      <LoadingButtonsTransition />
-      <CustomizedRating />
-      <SelectOtherProps />
-      <BasicTextFields />
-      <br />
-      <Types />
-      <br />
-      <ScrollDialog />
-      <TemporaryDrawer />
+      <Box sx={{
+        backgroundColor: 'yellow',
+        padding: '40px',
+        '&:hover': {
+          backgroundColor: 'red',
+          cursor: 'pointer'
+        },
+      }}
+      >
+
+        <Typography variant='h2'>Hi There</Typography>
+
+      </Box>
     </div>
   );
 }
