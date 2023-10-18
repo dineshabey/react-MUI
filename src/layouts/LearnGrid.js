@@ -4,7 +4,12 @@ import React from 'react'
 export default function LearnGrid() {
   return (
     <div>
-      <Grid container sx={{bgcolor:'teal'}} spacing={3}>
+      <Grid
+        container
+        sx={{ bgcolor: 'teal' }}
+        spacing={3}
+        justifyContent='space-between'
+        >
         <Grid item>
           <Box sx={{ bgcolor: 'lightgrey' }}>
             <Typography>Item 01</Typography>
