@@ -15,10 +15,10 @@ function App() {
       <br /> */}
 
       <Box sx={{
-        backgroundColor: 'yellow',
-        padding: '40px',
+        bgcolor: 'yellow',
+        p: '40px',
         '&:hover': {
-          backgroundColor: 'red',
+          bgcolor: 'red',
           cursor: 'pointer'
         },
       }}
