@@ -7,6 +7,7 @@ import SelectOtherProps from './components/SelectOtherProps';
 import BasicTextFields from './components/BasicTextFields';
 import Types from './components/Types';
 import ScrollDialog from './components/ScrollDialog';
+import TemporaryDrawer from './components/TemporaryDrawer';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Types />
       <br />
       <ScrollDialog />
+      <TemporaryDrawer />
     </div>
   );
 }
