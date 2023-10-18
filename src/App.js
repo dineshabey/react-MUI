@@ -3,6 +3,7 @@ import './App.css';
 import ComponetsUsages from './ComponetsUsages';
 import BoxSx from './layouts/BoxSx';
 import BasicGrid from './layouts/BasicGrid';
+import LearnGrid from './layouts/LearnGrid';
 
 
 function App() {
@@ -16,8 +17,10 @@ function App() {
 
       {/* <BoxSx /> */}
 
-      <BasicGrid/>
-  
+      {/* <BasicGrid/> */}
+
+      <LearnGrid />
+
     </div>
   );
 }
