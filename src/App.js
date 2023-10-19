@@ -4,6 +4,7 @@ import ComponetsUsages from './ComponetsUsages';
 import BoxSx from './layouts/BoxSx';
 import BasicGrid from './layouts/BasicGrid';
 import LearnGrid from './layouts/LearnGrid';
+import NestedGrid from './layouts/NestedGrid';
 
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
       {/* <BasicGrid/> */}
 
       <LearnGrid />
+
+      <NestedGrid/>
 
     </div>
   );
