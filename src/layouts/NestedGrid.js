@@ -6,10 +6,11 @@ export default function NestedGrid() {
         <div>
             <Grid container>
                 <Grid item xs={5} sm={4} md={2} sx={{ bgcolor: 'red' }}>
-                    {Array.from(Array(20)).map((val, key) => {
+                    {Array.from(Array(18)).map((val, key) => {
                         return (<Typography
-                            variant='h3'
+                            variant='h4'
                             key={key}
+                            sx={{ p: 1 }}
                         >Item {key}</Typography>);
                     })}
                 </Grid>
