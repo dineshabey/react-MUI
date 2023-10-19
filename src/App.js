@@ -20,7 +20,7 @@ function App() {
 
       {/* <BasicGrid/> */}
 
-      <LearnGrid />
+      {/* <LearnGrid /> */}
 
       <NestedGrid/>
 
