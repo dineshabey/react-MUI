@@ -6,9 +6,12 @@ export default function NestedGrid() {
         <div>
             <Grid container>
                 <Grid item xs={5} sm={4} md={2} sx={{ bgcolor: 'red' }}>
-                    <Typography>
-
-                    </Typography>
+                    {Array.from(Array(20)).map((val, key) => {
+                        return (<Typography
+                            variant='h3'
+                            key={key}
+                        >Item {key}</Typography>);
+                    })}
                 </Grid>
                 <Grid item xs={7} sm={8} md={10} sx={{ bgcolor: 'yellow' }}>
                     Colum 2
